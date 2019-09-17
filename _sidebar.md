@@ -1,2 +1,5 @@
 * [Home](/)
 * [Autorización](authorization.md)
+* [Perfiles](perfiles.md)
+* [Compañias](companies.md)
+* [Busquedas](queries.md)
