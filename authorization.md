@@ -33,4 +33,16 @@ Se envia:
 | :---        |    :----   |          :--- |
 | refresh   |     String    |     Token de refresco, usado para reiniciar el de acceso una vez que se venza  |
 
-Una vez hecha la llamada se refresca el token.
+Una vez hecha se envía un nuevo access token.
+Los parametros retornados son:
+
+| Parametro      | Tipo | Descripción     |
+| :---        |    :----   |          :--- |
+| access   |     String    |  El nuevo access token (valido por 15 minutos) |
+
+Para hacer llamadas a cualquier otro endpoint necesitas usar los siguientes headers:
+
+      {
+         "x-api-key": "la api key proveida por validu",
+         "Authorization": "El access token obtenido por /token/ o /token/refresh/"
+      }
